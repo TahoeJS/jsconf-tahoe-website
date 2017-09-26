@@ -1,0 +1,1 @@
+This is a [Jekyll](https://jekyllrb.com/) based site — see their docs for reference.
