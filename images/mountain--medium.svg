@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="289px" height="184px" viewBox="0 0 289 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle 2 Copy 242x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="235.495003 26.8300171 362.990005 172.538592 108 172.538592"></polygon>
+        <filter x="-13.7%" y="-30.9%" width="127.5%" height="148.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-83.000000, -683.000000)">
+            <g id="Hero" transform="translate(-175.000000, -60.000000)">
+                <g id="Foreground" transform="translate(9.000000, 744.000000)">
+                    <g id="Mountains-Gray" transform="translate(158.000000, 0.000000)">
+                        <g id="Triangle-2-Copy-24">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#01AAC7" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
