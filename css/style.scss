@@ -9,35 +9,44 @@ html {
   font-size: 10px;
 }
 
+body {
+  background: #02B4D4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .header {
   box-sizing: border-box;
   height: 100vh;
   margin: 0 auto;
+  min-height: 70rem;
+  max-height: 100rem;
   overflow: hidden;
-  padding-top: 6rem;
   position: relative;
   top: 0;
   width: 100%;
 
-  &:before {
-    background-image: radial-gradient(at bottom, #1C1C1F 0%, #340F4C 100%);
+  &:after {
+    // background-image: radial-gradient(at bottom, #1C1C1F 0%, #340F4C 100%);
     content: '';
     display: block;
-    height: 100vh;
+    height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
   }
 
-  &:after {
-    background-image: url('/images/stars.jpg');
+  &:before {
+    background-image: url('/images/header-background.jpg');
     background-size: cover;
     content: '';
     display: block;
-    height: 100vh;
+    height: 100%;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 0;
     width: 100%;
@@ -50,7 +59,7 @@ html {
 .header__content {
   align-items: center;
   display: flex;
-  height: 80%;
+  height: 100%;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -58,6 +67,7 @@ html {
 }
 
 .header__content__inner {
+  height: auto;
   margin: 0 auto;
   max-width: 50%;
   position: relative;
@@ -112,8 +122,9 @@ html {
 // Background Content
 
 .header__background {
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
+  padding-top: 6rem;
   position: absolute;
   width: 100%;
   z-index: 5;
@@ -121,22 +132,85 @@ html {
 
 .header__sun {
   display: block;
-  height: 100%;
+  height: 120%;
   margin: 0 auto;
   // max-width: 65%;
 }
 
+.header__sun--inner {
+    width: 100%; /* some width amount needed */
+    margin: 0 auto; 
+    overflow: visible;
+}
+
+.header__sun--outer {
+    position:relative;
+    float: right; /* this was added and display removed */
+    right: 50%;
+}
+
+.header__sun--outer img {
+    position: relative; 
+    right:-50%; /* this was changed from "left" in original */
+}
+
 .header__foreground-container {
-  top: 80%;
+  bottom: 10%;
   left: -20%;
   position: absolute;
   width: 140%;
+  z-index: 5;
 }
 
 .header__foreground {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .header__content__inner {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header_logo {
+    width: 20rem;
+  }
+
+  .header__content__inner {
+    max-width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .header,
+  .header__content,
+  .header__background {
+    height: 70vh;
+    min-height: 70rem;
+    max-height: 100rem;
+  }
+
+  .header__content__inner {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .header__meta {
+    font-size: 1.6rem;
+  }
+
+  .header__meta__date,
+  .header__meta__location {
+    padding: 0.4rem 1rem;
+  }
+
+  .header__tagline {
+    font-size: 2.7rem;
+  }
 }
 
 // Other
@@ -314,6 +388,7 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   transition: box-shadow 0.2s linear;
+  z-index: 12;
 
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
