@@ -18,6 +18,7 @@ body {
 }
 
 .header {
+  background: #210833;
   box-sizing: border-box;
   height: 100vh;
   margin: 0 auto;
@@ -58,7 +59,6 @@ body {
 
 .header__content {
   align-items: center;
-  background: #210833;
   display: flex;
   height: 100%;
   position: absolute;
